@@ -88,7 +88,7 @@ getgenv().config = {
     },
     ["Webhooks"] = {
         ["Link Webhook"] = "https://discord.com/api/webhooks/1205388446055800922/RaXmDGB-oIdikwQYnwnuUm849ByqL0HqNZK8PxJobSfV_ILWUvZleyDU8KdpYgu25oOE",
-        ["Toggle Webhook"] = true
+        ["Toggle Webhook"] = false
     },
     ["ChatSpam"] = {"Sera Hub On Top", "No Skill? Using SeraHub"},
     ["MinBountyHunt"] = 0,
