@@ -1,45 +1,39 @@
-getgenv().Configs = {
-    ["Team"] = "Marines", -- Pirates/Marines
-    ["Auto Ken"] = true,
-    ["Auto Buso"] = true,
-    ["Auto turn on race v3"] = true,
-    ["Auto turn on race v4"] = true,
-    ["FPS Boost"] = false,
-    ["Click Time"] = 0.7,
-    ["Bypass TP"] = true,
-    ["Time to kill"] = 40, -- seconds - max time to kill the target
-    ["Chat"] = {
-        ["Enable"] = true,
-        ["Message"] = {"亗彡𝕄𝕚𝕟𝕙〄ℕ𝕙𝕒𝕥彡亗"}, -- Input your message here
+getgenv().config = {
+    ["Team"] = "Marines",
+    ["Use Race"] = {
+        ["V3"] = true,
+        ["V4"] = true
     },
-    ["Run When Low Health"] = {
-        ["Enable"] = true,
-        ["Health"] = 3500,
-        ["Come back"] = false
+    ["Info Screen"] = true,
+    ["White Screen"] = false,
+    ["BypassTp"] = true,
+    ["SkipFruit"] = {
+        "Portal-Portal"
     },
-    ["Region"] = "Singapore", -- Singapore, United States, Germany, ...
-    ["Weapons"] = {
+    ["Skip Race V4 User"] = false,
+    ["MainSkillToggle"] = {
         ["Melee"] = {
             ["Enable"] = true,
             ["Delay"] = 2,
             ["Skills"] = {
                 ["Z"] = {
                     ["Enable"] = true,
-                    ["HoldTime"] = 0,
+                    ["HoldTime"] = 1.5,
                 },
-                ["X"] = {
+                [ "X"] = {
                     ["Enable"] = true,
                     ["HoldTime"] = 0,
                 },
+
                 ["C"] = {
                     ["Enable"] = true,
                     ["HoldTime"] = 0,
-                }
-            }
+                },
+            },
         },
-        ["Fruit"] = {
-            ["Enable"] = true,
-            ["Delay"] = 0.5,
+        ["Blox Fruit"] = {
+            ["Enable"] =true,
+            ["Delay"] = 3,
             ["Skills"] = {
                 ["Z"] = {
                     ["Enable"] = true,
@@ -49,7 +43,6 @@ getgenv().Configs = {
                     ["Enable"] = true,
                     ["HoldTime"] = 0,
                 },
-
                 ["C"] = {
                     ["Enable"] = true,
                     ["HoldTime"] = 0,
@@ -61,25 +54,11 @@ getgenv().Configs = {
                 ["F"] = {
                     ["Enable"] = true,
                     ["HoldTime"] = 0,
-                }
-            }
-        },
-        ["Sword"] = {
-            ["Enable"] = false,
-            ["Delay"] = 1,
-            ["Skills"] = {
-                ["Z"] = {
-                    ["Enable"] = true,
-                    ["HoldTime"] = 3,
                 },
-                ["X"] = {
-                    ["Enable"] = true,
-                    ["HoldTime"] = 0,
-                }
-            }
+            },
         },
         ["Gun"] = {
-            ["Enable"] = false,
+            ["Enable"] = true,
             ["Delay"] = 2,
             ["Skills"] = {
                 ["Z"] = {
@@ -89,18 +68,31 @@ getgenv().Configs = {
                 ["X"] = {
                     ["Enable"] = true,
                     ["HoldTime"] = 0,
-                }
-            }
+                },
+            },
+        },
+        ["Sword"] = {
+            ["Enable"] = true,
+            ["Delay"] = 2,
+            ["Skills"] = {
+                ["Z"] = {
+                    ["Enable"] = true,
+                    ["HoldTime"] = 0,
+                },
+                ["X"] = {
+                    ["Enable"] = true,
+                    ["HoldTime"] = 0,
+                },
+            },
         }
     },
-    ["Theme"] = {
-        ["Enable"] = true,
-        ["Name"] = "Hutao", -- Hutao, Raiden, Ayaka, Yelan
-        ["Custom Theme"] = {
-            ["Enable"] = false,
-            ["Text Color"] = Color3.fromRGB(231, 85, 88),
-            ["Character Position"] = UDim2.new(0.563000023, 0, -0.174999997, 0)
-        }
-    }
+    ["Webhooks"] = {
+        ["Link Webhook"] = "https://discord.com/api/webhooks/1205388446055800922/RaXmDGB-oIdikwQYnwnuUm849ByqL0HqNZK8PxJobSfV_ILWUvZleyDU8KdpYgu25oOE",
+        ["Toggle Webhook"] = true
+    },
+    ["ChatSpam"] = {"Sera Hub On Top", "No Skill? Using SeraHub"},
+    ["MinBountyHunt"] = 0,
+    ["MaxBountyHunt"] = 30000000,
+    ["SafeHealth"] = 5500
 }
-loadstring(game:HttpGet("https://xerohub.click/script/autobounty.lua"))() 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LumosSera/SeraHub/main/AutoBounty.lua"))()
